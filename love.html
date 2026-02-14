@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just Curious</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <div class="page center">
+    <span class="section-label">Chapter III: You & Me</span>
+    
+    <div class="photo-carousel">
+      <div class="carousel-container">
+        <img src="images/IMG_0284.jpeg" alt="Your beauty" class="carousel-img active" />
+        <img src="images/IMG_0359.jpeg" alt="Your smile" class="carousel-img" />
+        <img src="images/IMG_0775.jpeg" alt="Our moments" class="carousel-img" />
+      </div>
+      <button class="carousel-btn prev" onclick="changeSlide(-1)">‹</button>
+      <button class="carousel-btn next" onclick="changeSlide(1)">›</button>
+    </div>
+
+    <h2 class="hero-question">So... tell me</h2>
+    <p class="soft-text">Are you as deeply, madly in love with me as I am with you? 💕</p>
+
+    <div class="interactive-buttons">
+      <button id="yesBtn" class="btn primary floating charm-button">
+        <span class="btn-text">Completely</span>
+        <span class="btn-icon">💋</span>
+      </button>
+      <button id="noBtn" class="btn ghost">Not sure...</button>
+    </div>
+
+    <p id="result" class="result" style="display: none;">I already knew that. 😏💕</p>
+
+    <div id="continueSection" style="display: none; margin-top: 40px;">
+      <a href="valentine.html" class="btn primary floating charm-button">
+        <span class="btn-text">One Last Question</span>
+        <span class="btn-icon">💋</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="love.js"></script>
+</body>
+</html>
